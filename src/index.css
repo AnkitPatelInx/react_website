@@ -16,3 +16,11 @@ code {
   color: brown;
   border-bottom: 1px solid;
 }
+
+.mobile-error{
+  color: red;
+}
+
+.mobile-success{
+  color: green;
+}
