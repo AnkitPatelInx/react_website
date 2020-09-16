@@ -1,10 +1,20 @@
 import React from 'react';
+import Axios from 'axios';
+const api_url = "http://localhost:3003";
 
 class Contact extends React.Component{
     constructor(props){
         super(props);
         this.handleChange = this.handleChange.bind(this);
         this.state = {firstName : '', lastName : '', mobile : '', message : 'Form', messageClass : ''};
+
+        Axios.get(api_url+"/users")
+        .then(function(res){
+            console.log(res);
+        })
+        .catch(function(res){
+            console.log(res);
+        });
     };
 
     handleChange(e){

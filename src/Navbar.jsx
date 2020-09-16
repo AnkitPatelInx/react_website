@@ -32,7 +32,7 @@ return(
                     <li className="nav-item">
                         <NavLink exact 
                         activeClassName="menu_active"
-                        className="nav-link" to="/contact">Contact</NavLink>
+                        className="nav-link" to="/contact">Users</NavLink>
                     </li>
                     </ul>
                 </div>
