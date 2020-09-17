@@ -34,6 +34,11 @@ return(
                         activeClassName="menu_active"
                         className="nav-link" to="/contact">Users</NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink exact 
+                        activeClassName="menu_active"
+                        className="nav-link" to="/react_website">react_website</NavLink>
+                    </li>
                     </ul>
                 </div>
                 </nav>

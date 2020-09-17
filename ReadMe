@@ -17,4 +17,12 @@ install bootstrap and react-router-dom
  - cd react_website
  - npm i bootstrap@5.0.0-alpha1
  - npm i react-router-dom
+ ==========
+ - npm install -g json-server
+ - Create a db.json file with some data (You can check db.json in this project)
+ - json-server --watch db.json --port=3003
+ - http://localhost:3003/users
+ ===========
+ 
+
 

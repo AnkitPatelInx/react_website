@@ -24,3 +24,8 @@ code {
 .mobile-success{
   color: green;
 }
+
+tbody, td, tfoot, th, thead, tr{
+  border-width : 1px !important;
+  padding: 10px !important;
+}

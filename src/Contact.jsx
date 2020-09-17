@@ -1,20 +1,17 @@
 import React from 'react';
-import Axios from 'axios';
-const api_url = "http://localhost:3003";
 
-class Contact extends React.Component{
+class Users extends React.Component{
     constructor(props){
         super(props);
         this.handleChange = this.handleChange.bind(this);
-        this.state = {firstName : '', lastName : '', mobile : '', message : 'Form', messageClass : ''};
+        this.state = {
+            firstName : '', 
+            lastName : '', 
+            mobile : '', 
+            message : 'Form', 
+            messageClass : '',
 
-        Axios.get(api_url+"/users")
-        .then(function(res){
-            console.log(res);
-        })
-        .catch(function(res){
-            console.log(res);
-        });
+        };
     };
 
     handleChange(e){
@@ -55,26 +52,26 @@ class Contact extends React.Component{
 
     render(){
         return (
-            
+        <>
             <form onSubmit={this.handleSubmit.bind(this)}>
                 <h1 className={this.state.messageClass}>{this.state.message}</h1>
-                <>
+                <table><tbody>
                     <tr>
                         <td>First Name : </td>
-                        <td><input type="text" name="firstName" onChange={this.handleChange} /></td>
+                        <td><input value={this.state.firstName} type="text" name="firstName" onChange={this.handleChange} /></td>
                     </tr>
                     <tr>
                         <td>
                             Last Name : 
                         </td>
                         <td>
-                            <input type="text" name="lastName" onChange={this.handleChange} />
+                            <input value={this.state.lastName} type="text" name="lastName" onChange={this.handleChange} />
                         </td>
                     </tr>
                     <tr>
                         <td>Mobile (10 Digit) : &nbsp; </td>
                         <td>
-                            <input type="text" name="mobile" onChange={this.handleChange} />
+                            <input value={this.state.mobile} type="text" name="mobile" onChange={this.handleChange} />
                         </td>
                     </tr>
                     <tr>
@@ -87,9 +84,9 @@ class Contact extends React.Component{
                             <input type="reset" />
                         </td>
                     </tr>
-                </>
+                </tbody></table>
             </form>
-            
+        </>    
         );
     };
 }
@@ -100,4 +97,4 @@ class Contact extends React.Component{
     
 // }
 
-export default Contact;
+export default Users;
