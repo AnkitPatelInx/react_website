@@ -29,3 +29,13 @@ tbody, td, tfoot, th, thead, tr{
   border-width : 1px !important;
   padding: 10px !important;
 }
+
+table#cat{
+  width: 100%;
+}
+
+.categoty-action-link {
+  font-weight: bold !important;
+  cursor: pointer !important;
+  color: #673AB7 !important;
+}

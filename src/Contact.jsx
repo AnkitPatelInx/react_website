@@ -33,12 +33,12 @@ class Users extends React.Component{
     handleSubmit(e){
         debugger;
         e.preventDefault();
-        if(isNaN(this.state.mobile) || this.state.mobile.length != 10){
+        if(isNaN(this.state.mobile) || this.state.mobile.length !== 10){
             this.setState({message : "Please enter valid 10 digit mobile number"});
             this.setState({messageClass : "mobile-error"});
             return null;
         }
-        if(this.state.firstName.trim()=='' || this.state.lastName.trim()==''){
+        if(this.state.firstName.trim()==='' || this.state.lastName.trim()===''){
             this.setState({message : "First Name and Last Name Required."});
             this.setState({messageClass : "mobile-error"});
             return null;
