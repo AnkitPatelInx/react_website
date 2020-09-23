@@ -10,6 +10,8 @@ import Navbar from "./Navbar"
 import Categories from "./Categories.jsx"
 import { Switch, Route, Redirect } from 'react-router-dom';
 import GoogleBtn from './GoogleBtn.js';
+import TwitterBtn from './Twitterlogin.js';
+import Firebasebtn from './Firebase.js';
 
 class App extends React.Component{
   render(){
@@ -19,7 +21,9 @@ class App extends React.Component{
       <div className="container-fluid">
           <div className="raw">
               <div className="col-10 mx-auto abcd">
-                <GoogleBtn />
+                {/* <GoogleBtn />
+                <TwitterBtn /> */}
+                <Firebasebtn />
               </div>
           </div>
       </div>
